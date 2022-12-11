@@ -13,13 +13,13 @@ body{
     width: 75%;
 }
 
-#pophead {
+#log-window {
     top: 0;
     left: 0;
     z-index: 1090;
     
 }
-.popup-content{
+.log-content{
     width: 450px;
     height: 350px;
     display: block;
@@ -35,14 +35,14 @@ body{
     background-color: #1877f2;
 }
 
-.newAccount{
+#newAcc{
     background-color: #42b72a;
 }
 
 .logIn:hover{
     background-color: #1667d1!important;
 }
-.newAccount:hover{
+#newAcc:hover{
     background-color: #3ba726!important;
 }
 
@@ -57,11 +57,39 @@ body{
         width: 100%;
     }
     
-    .popup-content{
+    .log-content{
         min-width: 250px;
         width: 50%;
         left: 25%;
         top: 150px;
     }
+    
+}
+
+
+
+#reghead {
+    display: none;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.6);
+    top: 0;
+    left: 0;
+    z-index: 1090;
+}
+.reg-content {
+    box-shadow: 1px 2px 2px 5px #888888;
+    min-width: 250px;
+    max-width: 400px;
+    width: 50%;
+    height: 300px;
+    position: absolute;
+    left: 25%;
+    top: 100px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.signUp{
+    background-color: #3ba726!important;
     
 }
