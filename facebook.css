@@ -1,0 +1,67 @@
+body{
+    background-color: rgb(231, 232, 237);
+}
+
+.header-content{
+    margin-top: 200px; 
+    margin-left: 150px; 
+    width: 420px
+
+}
+
+.facebook-caption{
+    width: 75%;
+}
+
+#pophead {
+    top: 0;
+    left: 0;
+    z-index: 1090;
+    
+}
+.popup-content{
+    width: 450px;
+    height: 350px;
+    display: block;
+    position: absolute;
+    left: 55%;
+    top: 100px;
+    padding: 20px;
+    background-color: #fff;
+    min-width: 300px;
+}
+.logIn{
+    font-size: 28px !important;
+    background-color: #1877f2;
+}
+
+.newAccount{
+    background-color: #42b72a;
+}
+
+.logIn:hover{
+    background-color: #1667d1!important;
+}
+.newAccount:hover{
+    background-color: #3ba726!important;
+}
+
+@media only screen and (max-width: 996px){
+    .header-content{
+        margin-top: 0; 
+        margin-left: 0; 
+        width: 100%;
+        text-align: center;
+    }
+    .facebook-caption{
+        width: 100%;
+    }
+    
+    .popup-content{
+        min-width: 250px;
+        width: 50%;
+        left: 25%;
+        top: 150px;
+    }
+    
+}
