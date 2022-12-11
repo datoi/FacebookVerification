@@ -1,17 +1,4 @@
-let database = [
-    {
-        username: "admin",
-        password: "123"
-    },
-    {
-        username: "ceo",
-        password: "456"
-    },
-    {
-        username: "leader",
-        password: "789"
-    }
-];
+let database = [];
 
 let user = document.getElementById("username")
 let pass = document.getElementById("password")
@@ -35,4 +22,29 @@ button.addEventListener("click",function signIn(){
         alert("ERROR")
     }
     isuservalid(user, pass)
+})
+
+
+
+let registration = document.getElementById("reghead")
+let newacc = document.getElementById("newAcc")
+let exit = document.getElementById("exit")
+newacc.addEventListener("click", function(){
+    registration.style.display = "block"
+})
+exit.addEventListener("click", function(){
+    registration.style.display = "none"
+})
+
+let newUser = document.getElementById("newUsername")
+let newPass = document.getElementById("newPassword")
+let signUp = document.getElementById("signUp")
+
+signUp.addEventListener('click' , function(){
+   const obj = {
+       username: newUser.value,
+       password: newPass.value
+   }
+
+   database.push(obj)
 })
